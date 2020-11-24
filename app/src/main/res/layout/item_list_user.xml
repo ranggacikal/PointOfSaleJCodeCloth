@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="7dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_list_user"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap :"
+                android:textColor="#1f2837"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_list_nama_user"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap User"
+                android:textColor="#1f2837"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Email :"
+                android:textColor="#1f2837"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_list_email_user"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Email@user.com"
+                android:textColor="#1f2837"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Level :"
+                android:textColor="#1f2837"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_list_level_user"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Admin/Kasir"
+                android:textColor="#1f2837"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_edit_list_user"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rectangle1"
+            android:text="EDIT"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_hapus_list_user"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle2"
+            android:text="HAPUS"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

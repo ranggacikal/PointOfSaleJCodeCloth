@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="7dp"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:id="@+id/linear_click_barang_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_data_barang_list"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/logojcodefix"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kode Barang :"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/text_kode_barang_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KODE 000"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_nama_barang_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAMA Produk"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/text_harga_barang_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp. xxxxx"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/text_jenis_barang_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Barang"
+            android:textSize="10sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ukuran :"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/text_ukuran_barang_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S/M/L/XL"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stock :"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/text_stock_barang_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/2/3"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_barang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#75000000"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STOCK HABIS"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

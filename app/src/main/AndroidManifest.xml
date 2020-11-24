@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ranggacikal.com.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".EditUserActivity"></activity>
+        <activity android:name=".EditHapusJenisSupplierActivity" />
+        <activity android:name=".TambahJenisSupplierActivity" />
+        <activity android:name=".JenisSupplierActivity" />
+        <activity android:name=".EditHapusSupplier" />
+        <activity android:name=".TambahSupplierActivity" />
+        <activity android:name=".SupplierActivity" />
+        <activity android:name=".PenjualanAdminActivity" />
+        <activity android:name=".DetailLaporanActivity" />
+        <activity android:name=".DetailBarangPenjualanActivity" />
+        <activity android:name=".BuktiPenjualanActivity" />
+        <activity android:name=".LaporanActivity" />
+        <activity android:name=".KeranjangActivity" />
+        <activity android:name=".TambahPenjualanActivity" />
+        <activity android:name=".PointOfSaleActivity" />
+        <activity android:name=".EditHapusPembelianActivity" />
+        <activity android:name=".DetailPembelianActivity" />
+        <activity android:name=".TambahPembelianActivity" />
+        <activity android:name=".PembelianActivity" />
+        <activity android:name=".EditHapusJenisBarangActivity" />
+        <activity android:name=".TambahJenisBarangActivity" />
+        <activity android:name=".JenisBarangActivity" />
+        <activity android:name=".EditBarangActivity" />
+        <activity android:name=".TambahBarangActivity" />
+        <activity android:name=".BarangAdminActivity" />
+        <activity android:name=".UserListActivity" />
+        <activity android:name=".KelolaUserActivity" />
+        <activity android:name=".HomeAdminActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <provider
+            android:name=".fileprovider.GenericFIleProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

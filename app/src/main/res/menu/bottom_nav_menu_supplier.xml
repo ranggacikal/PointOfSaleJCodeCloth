@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_tambah_supplier"
+        android:enabled="true"
+        android:icon="@drawable/ic_tambah"
+        android:title="Tambah Supplier"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_kelola_jenis_supplier"
+        android:enabled="true"
+        android:icon="@drawable/ic_kelola"
+        android:title="Kelola Jenis Supplier"
+        app:showAsAction="always" />
+</menu>

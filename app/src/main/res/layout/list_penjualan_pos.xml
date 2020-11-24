@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="7dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/listiconpembelian"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="ID Penjualan :"
+                android:textColor="#1f2837"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_list_id_penjualan"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="000000"
+                android:textColor="#1f2837"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Penjualan :"
+                android:textColor="#1f2837"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_list_tanggal_penjualan"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="DD/MMMM/YYYY"
+                android:textColor="#1f2837"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Total :"
+                android:textColor="#1f2837"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_list_total_penjualan"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Rp.xxxxx"
+                android:textColor="#1f2837"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Status :"
+                android:textColor="#1f2837"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_list_status_penjualan"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Selesai/Belum Selesai"
+                android:textColor="#1f2837"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="User :"
+                android:textColor="#1f2837"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_list_username_penjualan"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="siapanih"
+                android:textColor="#1f2837"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btn_detail_list_penjualan"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rectangle1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="15dp"
+                android:text="Detail"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_cetak_bukti_penjualan"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/btn_detail_list_penjualan"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangle1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="Cetak Bukti"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_selesaikan_pembelian_list_penjualan"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rectangle2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="15dp"
+                android:text="Checkout"
+                android:textColor="#fff"
+                android:visibility="gone"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

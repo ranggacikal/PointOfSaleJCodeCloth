@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="7dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/supplierlist"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="ID Supplier :"
+                android:textColor="#1f2837"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_list_id_supplier"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="000000"
+                android:textColor="#1f2837"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Nama Supplier :"
+                android:textColor="#1f2837"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_list_nama_supplier"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="APA JAYA"
+                android:textColor="#1f2837"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="No. Handphone :"
+                android:textColor="#1f2837"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_list_notelpon_supplier"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="08111111"
+                android:textColor="#1f2837"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Email :"
+                android:textColor="#1f2837"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_list_email_supplier"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="08111111"
+                android:textColor="#1f2837"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Alamat :"
+                android:textColor="#1f2837"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_list_alamat_supplier"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Jl.xoxoxoxoxo"
+                android:textColor="#1f2837"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Jenis Supplier :"
+                android:textColor="#1f2837"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_list_jenis_supplier"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="08111111"
+                android:textColor="#1f2837"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
